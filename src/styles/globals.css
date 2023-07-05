@@ -74,6 +74,11 @@
   }
 } */
 
+@font-face {
+  font-family: normalFont400;
+  src: url('../../public/fonts/rubik/Rubik-Regular.ttf');
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
