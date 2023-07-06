@@ -5,6 +5,13 @@ import { faHeadset } from "@fortawesome/free-solid-svg-icons";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { HiOutlineMenu } from "react-icons/hi";
+import { AiOutlineRight } from "react-icons/ai";
+import { FaFacebook } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+
 const Navbar = () => {
   return (
     <>
@@ -85,10 +92,16 @@ const Navbar = () => {
                 id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel"
               >
-                <div className="offcanvas-header">
-                  <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
-                    Offcanvas
-                  </h5>
+                <div
+                  className="offcanvas-header"
+                  style={{ background: "rgba(35,47,63)" }}
+                >
+                  <picture
+                    className="offcanvas-title p-2"
+                    id="offcanvasNavbarLabel"
+                  >
+                    <img src="/logo.webp" alt="logo" />
+                  </picture>
                   <button
                     type="button"
                     className="btn-close"
@@ -96,21 +109,39 @@ const Navbar = () => {
                     aria-label="Close"
                   ></button>
                 </div>
+
                 <div className="offcanvas-body">
                   <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li className="nav-item">
+                    <li className="nav-item dropdown">
                       <a
-                        className="nav-link active"
-                        aria-current="page"
+                        className="nav-link dropdown-toggle"
                         href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
                       >
-                        Home
+                        Dropdown
                       </a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="#">
-                        Link
-                      </a>
+                      <ul className="dropdown-menu">
+                        <li>
+                          <a className="dropdown-item" href="#">
+                            Action
+                          </a>
+                        </li>
+                        <li>
+                          <a className="dropdown-item" href="#">
+                            Another action
+                          </a>
+                        </li>
+                        <li>
+                          <hr className="dropdown-divider" />
+                        </li>
+                        <li>
+                          <a className="dropdown-item" href="#">
+                            Something else here
+                          </a>
+                        </li>
+                      </ul>
                     </li>
                     <li className="nav-item dropdown">
                       <a
@@ -143,18 +174,259 @@ const Navbar = () => {
                         </li>
                       </ul>
                     </li>
+                    <li className="nav-item dropdown">
+                      <a
+                        className="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Dropdown
+                      </a>
+                      <ul className="dropdown-menu">
+                        <li>
+                          <a className="dropdown-item" href="#">
+                            Action
+                          </a>
+                        </li>
+                        <li>
+                          <a className="dropdown-item" href="#">
+                            Another action
+                          </a>
+                        </li>
+                        <li>
+                          <hr className="dropdown-divider" />
+                        </li>
+                        <li>
+                          <a className="dropdown-item" href="#">
+                            Something else here
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className="nav-item dropdown">
+                      <a
+                        className="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Dropdown
+                      </a>
+                      <ul className="dropdown-menu">
+                        <li>
+                          <a className="dropdown-item" href="#">
+                            Action
+                          </a>
+                        </li>
+                        <li>
+                          <a className="dropdown-item" href="#">
+                            Another action
+                          </a>
+                        </li>
+                        <li>
+                          <hr className="dropdown-divider" />
+                        </li>
+                        <li>
+                          <a className="dropdown-item" href="#">
+                            Something else here
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className="nav-item dropdown">
+                      <a
+                        className="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Dropdown
+                      </a>
+                      <ul className="dropdown-menu">
+                        <li>
+                          <a className="dropdown-item" href="#">
+                            Action
+                          </a>
+                        </li>
+                        <li>
+                          <a className="dropdown-item" href="#">
+                            Another action
+                          </a>
+                        </li>
+                        <li>
+                          <hr className="dropdown-divider" />
+                        </li>
+                        <li>
+                          <a className="dropdown-item" href="#">
+                            Something else here
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className="nav-item dropdown">
+                      <a
+                        className="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Dropdown
+                      </a>
+                      <ul className="dropdown-menu">
+                        <li>
+                          <a className="dropdown-item" href="#">
+                            Action
+                          </a>
+                        </li>
+                        <li>
+                          <a className="dropdown-item" href="#">
+                            Another action
+                          </a>
+                        </li>
+                        <li>
+                          <hr className="dropdown-divider" />
+                        </li>
+                        <li>
+                          <a className="dropdown-item" href="#">
+                            Something else here
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className="nav-item dropdown">
+                      <a
+                        className="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Dropdown
+                      </a>
+                      <ul className="dropdown-menu">
+                        <li>
+                          <a className="dropdown-item" href="#">
+                            Action
+                          </a>
+                        </li>
+                        <li>
+                          <a className="dropdown-item" href="#">
+                            Another action
+                          </a>
+                        </li>
+                        <li>
+                          <hr className="dropdown-divider" />
+                        </li>
+                        <li>
+                          <a className="dropdown-item" href="#">
+                            Something else here
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className="nav-item dropdown">
+                      <a
+                        className="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Dropdown
+                      </a>
+                      <ul className="dropdown-menu">
+                        <li>
+                          <a className="dropdown-item" href="#">
+                            Action
+                          </a>
+                        </li>
+                        <li>
+                          <a className="dropdown-item" href="#">
+                            Another action
+                          </a>
+                        </li>
+                        <li>
+                          <hr className="dropdown-divider" />
+                        </li>
+                        <li>
+                          <a className="dropdown-item" href="#">
+                            Something else here
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">
+                        Accessories
+                      </a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">
+                        Beaf Steak
+                      </a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">
+                        Vitamin Items
+                      </a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">
+                        Raw Chicken mdeo
+                      </a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">
+                        Breakfast Item
+                      </a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">
+                        Fish Items
+                      </a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">
+                        Green Vegetables
+                      </a>
+                    </li>
                   </ul>
-                  <form className="d-flex mt-3" role="search">
-                    <input
-                      className="form-control me-2"
-                      type="search"
-                      placeholder="Search"
-                      aria-label="Search"
-                    />
-                    <button className="btn btn-outline-success" type="submit">
-                      Search
-                    </button>
-                  </form>
+                </div>
+
+                <hr className="m-0" />
+                <div className="offcanvas-footer">
+                  <div className="d-flex justify-content-center align-items-center p-3">
+                    <a href="#">
+                      <FaFacebook
+                        className="mx-2 text-muted"
+                        style={{ fontSize: "22px" }}
+                      />
+                    </a>
+                    <a href="#">
+                      <FaTwitter
+                        className="mx-2 text-muted"
+                        style={{ fontSize: "22px" }}
+                      />
+                    </a>
+                    <a href="#">
+                      <FaYoutube
+                        className="mx-2 text-muted"
+                        style={{ fontSize: "22px" }}
+                      />
+                    </a>
+                    <a href="#">
+                      <FaInstagram
+                        className="mx-2 text-muted"
+                        style={{ fontSize: "22px" }}
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -162,31 +434,201 @@ const Navbar = () => {
         </div>
       </div>
 
-      <nav className="navbar navbar-expand-lg bg-light">
+      <nav className="navbar navbar-expand-lg d-none d-lg-block">
         <div className="container-fluid">
-          <div className="navbar-collapse">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Link
-                </a>
-              </li>
-              <li className="nav-item dropdown">
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              className={`navbar-nav me-auto p-2 mb-2 mb-lg-0 fw-bold ${styles.font14}`}
+            >
+              <li className="nav-item dropdown ps-2 me-5 pe-5">
                 <a
-                  className="nav-link dropdown-toggle"
+                  className="nav-link d-flex align-items-center"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown
+                  <HiOutlineMenu style={{ fontSize: "24px", color: "black" }} />
+                  <span className="ms-2 text-dark">ALL CATEGORIES</span>
                 </a>
-                <ul className="dropdown-menu">
+                <ul className={`dropdown-menu w-100 ${styles.font14}`}>
+                  <li className="d-flex align-items-center p-2">
+                    <a className="dropdown-item" href="#">
+                      Audio Music
+                    </a>
+                    <AiOutlineRight />
+                  </li>
+
+                  <li className="px-3">
+                    <hr className="m-0" />
+                  </li>
+
+                  <li className="d-flex align-items-center p-2">
+                    <a className="dropdown-item" href="#">
+                      Phones & Tablet
+                    </a>
+                    <AiOutlineRight />
+                  </li>
+
+                  <li className="px-3">
+                    <hr className="m-0" />
+                  </li>
+
+                  <li className="d-flex align-items-center p-2">
+                    <a className="dropdown-item" href="#">
+                      Fashion & Clothing
+                    </a>
+                    <AiOutlineRight />
+                  </li>
+
+                  <li className="px-3">
+                    <hr className="m-0" />
+                  </li>
+
+                  <li className="d-flex align-items-center p-2">
+                    <a className="dropdown-item" href="#">
+                      Garden & Kitchen
+                    </a>
+                    <AiOutlineRight />
+                  </li>
+
+                  <li className="px-3">
+                    <hr className="m-0" />
+                  </li>
+
+                  <li className="d-flex align-items-center p-2">
+                    <a className="dropdown-item" href="#">
+                      TV & Video
+                    </a>
+                    <AiOutlineRight />
+                  </li>
+
+                  <li className="px-3">
+                    <hr className="m-0" />
+                  </li>
+
+                  <li className="d-flex align-items-center p-2">
+                    <a className="dropdown-item" href="#">
+                      Beauty & Health
+                    </a>
+                    <AiOutlineRight />
+                  </li>
+
+                  <li className="px-3">
+                    <hr className="m-0" />
+                  </li>
+
+                  <li className="d-flex align-items-center p-2">
+                    <a className="dropdown-item" href="#">
+                      Jewelry & Watches
+                    </a>
+                    <AiOutlineRight />
+                  </li>
+
+                  <li className="px-3">
+                    <hr className="m-0" />
+                  </li>
+
+                  <li className="d-flex align-items-center p-2">
+                    <a className="dropdown-item" href="#">
+                      Top 10 Offes
+                    </a>
+                    <AiOutlineRight />
+                  </li>
+
+                  <li className="px-3">
+                    <hr className="m-0" />
+                  </li>
+
+                  <li className="d-flex align-items-center p-2">
+                    <a className="dropdown-item" href="#">
+                      Accessories
+                    </a>
+                    <AiOutlineRight />
+                  </li>
+
+                  <li className="px-3">
+                    <hr className="m-0" />
+                  </li>
+
+                  <li className="d-flex align-items-center p-2">
+                    <a className="dropdown-item" href="#">
+                      Beaf Steak
+                    </a>
+                    <AiOutlineRight />
+                  </li>
+
+                  <li className="px-3">
+                    <hr className="m-0" />
+                  </li>
+
+                  <li className="d-flex align-items-center p-2">
+                    <a className="dropdown-item" href="#">
+                      Vitamin Items
+                    </a>
+                    <AiOutlineRight />
+                  </li>
+
+                  <li className="px-3">
+                    <hr className="m-0" />
+                  </li>
+
+                  <li className="d-flex align-items-center p-2">
+                    <a className="dropdown-item" href="#">
+                      Raw Chicken mdeo
+                    </a>
+                    <AiOutlineRight />
+                  </li>
+
+                  <li className="px-3">
+                    <hr className="m-0" />
+                  </li>
+
+                  <li className="d-flex align-items-center p-2">
+                    <a className="dropdown-item" href="#">
+                      Breakfast Item
+                    </a>
+                    <AiOutlineRight />
+                  </li>
+
+                  <li className="px-3">
+                    <hr className="m-0" />
+                  </li>
+
+                  <li className="d-flex align-items-center p-2">
+                    <a className="dropdown-item" href="#">
+                      Fish Items
+                    </a>
+                    <AiOutlineRight />
+                  </li>
+
+                  <li className="px-3">
+                    <hr className="m-0" />
+                  </li>
+
+                  <li className="d-flex align-items-center p-2">
+                    <a className="dropdown-item" href="#">
+                      Green Vegetables
+                    </a>
+                    <AiOutlineRight />
+                  </li>
+                </ul>
+              </li>
+
+              <li className="nav-item dropdown1 me-4">
+                <a
+                  className="nav-link dropdown-toggle1"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-mdb-toggle="dropdown1"
+                  aria-expanded="false"
+                >
+                  DEMOS
+                </a>
+                <ul
+                  className="dropdown-menu"
+                  aria-labelledby="dropdownMenuButton"
+                >
                   <li>
                     <a className="dropdown-item" href="#">
                       Action
@@ -198,7 +640,35 @@ const Navbar = () => {
                     </a>
                   </li>
                   <li>
-                    <hr className="dropdown-divider" />
+                    <a className="dropdown-item" href="#">
+                      Something else here
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li className="nav-item dropdown1 me-4">
+                <a
+                  className="nav-link dropdown-toggle1"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-mdb-toggle="dropdown1"
+                  aria-expanded="false"
+                >
+                  CATEGORIES
+                </a>
+                <ul
+                  className="dropdown-menu"
+                  aria-labelledby="dropdownMenuButton"
+                >
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Action
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Another action
+                    </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
@@ -207,8 +677,113 @@ const Navbar = () => {
                   </li>
                 </ul>
               </li>
-              <li className="nav-item">
-                <a className="nav-link disabled">Disabled</a>
+              <li className="nav-item dropdown1 me-4">
+                <a
+                  className="nav-link dropdown-toggle1"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-mdb-toggle="dropdown1"
+                  aria-expanded="false"
+                >
+                  MEGA MENU
+                </a>
+                <ul
+                  className="dropdown-menu"
+                  aria-labelledby="dropdownMenuButton"
+                >
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Action
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Another action
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Something else here
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+
+              <li className="nav-item me-4">
+                <a className="nav-link cus_nav_link" href="#">
+                  VENDORS
+                </a>
+              </li>
+
+
+              <li className="nav-item dropdown1 me-4">
+                <a
+                  className="nav-link dropdown-toggle1"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-mdb-toggle="dropdown1"
+                  aria-expanded="false"
+                >
+                  CATEGORIES
+                </a>
+                <ul
+                  className="dropdown-menu"
+                  aria-labelledby="dropdownMenuButton"
+                >
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Action
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Another action
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Something else here
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li className="nav-item dropdown1 me-4">
+                <a
+                  className="nav-link dropdown-toggle1"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-mdb-toggle="dropdown1"
+                  aria-expanded="false"
+                >
+                  MEGA MENU
+                </a>
+                <ul
+                  className="dropdown-menu"
+                  aria-labelledby="dropdownMenuButton"
+                >
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Action
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Another action
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Something else here
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li className="nav-item me-4">
+                <a className="nav-link cus_nav_link" href="#">
+                  CONTACT US
+                </a>
               </li>
             </ul>
           </div>
