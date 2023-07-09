@@ -102,8 +102,12 @@ body {
 } */
 
 a {
-  color: inherit;
+  color: inherit!important;
   text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -111,6 +115,8 @@ a {
     color-scheme: dark;
   }
 }
+
+/* Navbar */
 
 .dropdown1:hover>.dropdown-menu {
   display: block;
@@ -135,3 +141,29 @@ a {
 .cus_nav_link:hover {
   color: rgb(255,126,0)!important;
 }
+
+.dropdown-toggle::after {
+  border: solid black!important;
+  border-width: 0 2px 2px 0!important;
+  display: inline-block!important;
+  padding: 3px!important;
+  transform: rotate(45deg)!important;
+  transition: all 0.5s ease;
+  -webkit-transform: rotate(45deg)!important;
+}
+
+.dropdown-toggle.show::after {
+  transform: rotate(-135deg)!important;
+  -webkit-transform: rotate(-135deg)!important;
+}
+
+.dropdown-menu {
+  transition: all 1s ease!important;
+}
+
+.dropdown-menu.show {
+  padding: 0px;
+}
+
+/* Navbar */
+

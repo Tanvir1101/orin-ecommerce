@@ -11,14 +11,12 @@ import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { BiMinus } from "react-icons/bi";
 
 const Navbar = () => {
   return (
     <>
-      <div
-        className=""
-        style={{ background: "rgba(35,47,63)", color: "white" }}
-      >
+      <div className="" style={{ background: "rgba(35,47,63)", color: "white" }}>
         <div className={`d-flex mx-3 py-2 ${styles.font13}`}>
           <div className="p-2 flex-grow-1 d-none d-md-block d-lg-block">
             <FontAwesomeIcon icon={faLocationDot} /> Stote Location: 1234 Heaven
@@ -114,7 +112,7 @@ const Navbar = () => {
                   <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li className="nav-item dropdown">
                       <a
-                        className="nav-link dropdown-toggle"
+                        className={`nav-link dropdown-toggle d-flex justify-content-between align-items-center ${styles.font16}`}
                         href="#"
                         role="button"
                         data-bs-toggle="dropdown"
@@ -122,30 +120,28 @@ const Navbar = () => {
                       >
                         Dropdown
                       </a>
-                      <ul className="dropdown-menu">
+                      <ul className={`dropdown-menu ${styles.font16}`} style={{border: 'none'}}>
                         <li>
                           <a className="dropdown-item" href="#">
-                            Action
+                          <BiMinus/> Action
                           </a>
                         </li>
                         <li>
                           <a className="dropdown-item" href="#">
-                            Another action
+                          <BiMinus/> Action
                           </a>
                         </li>
                         <li>
-                          <hr className="dropdown-divider" />
-                        </li>
-                        <li>
                           <a className="dropdown-item" href="#">
-                            Something else here
+                          <BiMinus/> Action
                           </a>
                         </li>
                       </ul>
                     </li>
+
                     <li className="nav-item dropdown">
                       <a
-                        className="nav-link dropdown-toggle"
+                        className="nav-link dropdown-toggle d-flex justify-content-between align-items-center "
                         href="#"
                         role="button"
                         data-bs-toggle="dropdown"
@@ -153,7 +149,7 @@ const Navbar = () => {
                       >
                         Dropdown
                       </a>
-                      <ul className="dropdown-menu">
+                      <ul className="dropdown-menu" style={{border: 'none'}}>
                         <li>
                           <a className="dropdown-item" href="#">
                             Action
@@ -174,9 +170,10 @@ const Navbar = () => {
                         </li>
                       </ul>
                     </li>
+
                     <li className="nav-item dropdown">
                       <a
-                        className="nav-link dropdown-toggle"
+                        className="nav-link dropdown-toggle d-flex justify-content-between align-items-center "
                         href="#"
                         role="button"
                         data-bs-toggle="dropdown"
@@ -184,7 +181,7 @@ const Navbar = () => {
                       >
                         Dropdown
                       </a>
-                      <ul className="dropdown-menu">
+                      <ul className="dropdown-menu" style={{border: 'none'}}>
                         <li>
                           <a className="dropdown-item" href="#">
                             Action
@@ -205,9 +202,10 @@ const Navbar = () => {
                         </li>
                       </ul>
                     </li>
+
                     <li className="nav-item dropdown">
                       <a
-                        className="nav-link dropdown-toggle"
+                        className="nav-link dropdown-toggle d-flex justify-content-between align-items-center "
                         href="#"
                         role="button"
                         data-bs-toggle="dropdown"
@@ -215,7 +213,7 @@ const Navbar = () => {
                       >
                         Dropdown
                       </a>
-                      <ul className="dropdown-menu">
+                      <ul className="dropdown-menu" style={{border: 'none'}}>
                         <li>
                           <a className="dropdown-item" href="#">
                             Action
@@ -236,9 +234,10 @@ const Navbar = () => {
                         </li>
                       </ul>
                     </li>
+
                     <li className="nav-item dropdown">
                       <a
-                        className="nav-link dropdown-toggle"
+                        className="nav-link dropdown-toggle d-flex justify-content-between align-items-center "
                         href="#"
                         role="button"
                         data-bs-toggle="dropdown"
@@ -246,7 +245,7 @@ const Navbar = () => {
                       >
                         Dropdown
                       </a>
-                      <ul className="dropdown-menu">
+                      <ul className="dropdown-menu" style={{border: 'none'}}>
                         <li>
                           <a className="dropdown-item" href="#">
                             Action
@@ -267,9 +266,10 @@ const Navbar = () => {
                         </li>
                       </ul>
                     </li>
+
                     <li className="nav-item dropdown">
                       <a
-                        className="nav-link dropdown-toggle"
+                        className="nav-link dropdown-toggle d-flex justify-content-between align-items-center "
                         href="#"
                         role="button"
                         data-bs-toggle="dropdown"
@@ -277,7 +277,7 @@ const Navbar = () => {
                       >
                         Dropdown
                       </a>
-                      <ul className="dropdown-menu">
+                      <ul className="dropdown-menu" style={{border: 'none'}}>
                         <li>
                           <a className="dropdown-item" href="#">
                             Action
@@ -298,9 +298,10 @@ const Navbar = () => {
                         </li>
                       </ul>
                     </li>
+
                     <li className="nav-item dropdown">
                       <a
-                        className="nav-link dropdown-toggle"
+                        className="nav-link dropdown-toggle d-flex justify-content-between align-items-center "
                         href="#"
                         role="button"
                         data-bs-toggle="dropdown"
@@ -308,7 +309,7 @@ const Navbar = () => {
                       >
                         Dropdown
                       </a>
-                      <ul className="dropdown-menu">
+                      <ul className="dropdown-menu" style={{border: 'none'}}>
                         <li>
                           <a className="dropdown-item" href="#">
                             Action
@@ -329,9 +330,10 @@ const Navbar = () => {
                         </li>
                       </ul>
                     </li>
+
                     <li className="nav-item dropdown">
                       <a
-                        className="nav-link dropdown-toggle"
+                        className="nav-link dropdown-toggle d-flex justify-content-between align-items-center "
                         href="#"
                         role="button"
                         data-bs-toggle="dropdown"
@@ -339,7 +341,7 @@ const Navbar = () => {
                       >
                         Dropdown
                       </a>
-                      <ul className="dropdown-menu">
+                      <ul className="dropdown-menu" style={{border: 'none'}}>
                         <li>
                           <a className="dropdown-item" href="#">
                             Action
@@ -360,6 +362,7 @@ const Navbar = () => {
                         </li>
                       </ul>
                     </li>
+
 
                     <li className="nav-item">
                       <a className="nav-link" href="#">
@@ -434,7 +437,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <nav className="navbar navbar-expand-lg d-none d-lg-block">
+      <nav className="sticky-top navbar navbar-expand-lg d-none d-lg-block ">
         <div className="container-fluid">
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul
@@ -785,10 +788,12 @@ const Navbar = () => {
                   CONTACT US
                 </a>
               </li>
+              
             </ul>
           </div>
         </div>
       </nav>
+
     </>
   );
 };
