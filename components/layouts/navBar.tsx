@@ -62,11 +62,12 @@ const Navbar = () => {
               >
                 <input
                   type="text"
-                  className="form-control"
+                  style={{borderRadius: '100px 0px 0px 100px'}}
+                  className="form-control border-0"
                   aria-label="Sizing example input"
                   aria-describedby="inputGroup-sizing-lg"
                 />
-                <span className="input-group-text" id="inputGroup-sizing-lg">
+                <span className="input-group-text border-0" id="inputGroup-sizing-lg" style={{borderRadius: '0px 100px 100px 0px', background: 'white'}}>
                   <FontAwesomeIcon icon={faSearch} />
                 </span>
               </div>
@@ -74,7 +75,7 @@ const Navbar = () => {
                 <FontAwesomeIcon
                   className="me-3"
                   icon={faUser}
-                  style={{ fontSize: "25px" }}
+                  style={{ fontSize: "25px"}}
                 />
                 <FontAwesomeIcon
                   icon={faCartShopping}
@@ -432,6 +433,7 @@ const Navbar = () => {
                   </div>
                 </div>
               </div>
+              
             </div>
           </nav>
         </div>

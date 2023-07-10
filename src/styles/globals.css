@@ -131,7 +131,7 @@ a:hover {
 }
 
 .dropdown1:hover>.dropdown-toggle1{
-  color: rgb(255,126,0);
+  color: rgb(255,126,0)!important;
 }
 
 .cus_nav_link {
